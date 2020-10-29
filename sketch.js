@@ -12,7 +12,8 @@ var score = 0;
 function preload()
 {
    polygonImg = loadImage("polygon.png");
-   getBackgroundImg();
+	backgroundImg = loadImage("bg.png");
+   //getBackgroundImg();
 }
 
 function setup() 
@@ -57,11 +58,11 @@ function setup()
 function draw() 
 {
   
-  if(backgroundImg)
-  {
+  //if(backgroundImg)
+  //{
         background(backgroundImg);
         Engine.update(engine);
-  }
+  //}
     
 
   drawSprites();
